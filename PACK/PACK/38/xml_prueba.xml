@@ -1,0 +1,27 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema_prueba.xsd">
+	<filter a='1'> 
+		<filter-name>LOGFILTER</filter-name>
+		<filter-class>paquete.FilterServlet</filter-class>
+		<init-param>
+			<param-name>jdnejkd</param-name>
+			<param-value>jkdenkndke</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping b='1'>
+		<filter-name>dnjend</filter-name>
+		<url-pattern>ndendjen</url-pattern>
+	</filter-mapping>
+	<servlet c='1'>
+		<servlet-name>djdjr</servlet-name>
+		<servlet-class>dkjdklejde</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>kedjekldje</servlet-name>
+		<url-pattern>dekdjelkdj</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>
+			30
+		</session-timeout>
+	</session-config>
+</web-app>

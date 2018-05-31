@@ -1,0 +1,16 @@
+<!---El otro se puede usar en diferentes derivaciones y este está en el elemento raíz-->
+<!--DECLARAMOS EL ELEMENTO Y LUEGO EL COMPLEJO-->
+<!-- <elemento atributo = "10"> cadena <elemento> -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RAIZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="atributo" type="xs:string" use="required"/>
+				</xs:extension>
+				<!--VA A DERIVAR DEL TIPO STRING-->
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!-- atributos dentro de la extension -->

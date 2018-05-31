@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!--CREACION DE UNA TIPO CLASE-->
+	<xs:simpleType name="base">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="3"/> 
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!--CREACION DE ELEMENTOS-->
+	<xs:element name="RAIZ" type="base"/>
+	
+	
+</xs:schema>

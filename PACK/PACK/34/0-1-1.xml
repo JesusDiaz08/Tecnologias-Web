@@ -1,0 +1,20 @@
+﻿<!DOCTYPE casa
+[
+<!ELEMENT casa (habitacion+,objeto+,servicios?,disponibilidad?)>
+<!ELEMENT habitacion (#PCDATA)>
+<!ELEMENT objeto (#PCDATA)> 
+<!ELEMENT servicios (#PCDATA)> 
+<!ELEMENT disponibilidad EMPTY> 
+
+<!ATTLIST objeto nombre CDATA #REQUIRED>
+<!ATTLIST disponibilidad estado (ocupado|disponible) #REQUIRED>
+]>
+
+<casa>
+  <habitacion>COMEDOR</habitacion>
+  <habitacion>SALA DE ESTAR</habitacion>
+  <habitacion>DORMITORIO I</habitacion>
+  <habitacion>DORMITORIO II</habitacion>
+  <objeto nombre="ventana"/>
+  <disponibilidad estado="ocupado"/>
+</casa>

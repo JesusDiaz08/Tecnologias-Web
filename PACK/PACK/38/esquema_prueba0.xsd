@@ -1,0 +1,141 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="filter">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="filter-name"/>
+				<xs:element ref="filter-class"/>
+				<xs:element ref="init-param"/>
+			</xs:sequence>
+			<xs:attribute name="a" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:byte">
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="servlet">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="servlet-name"/>
+				<xs:element ref="servlet-class"/>
+			</xs:sequence>
+			<xs:attribute name="c" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:byte">
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="web-app">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="filter"/>
+				<xs:element ref="filter-mapping"/>
+				<xs:element ref="servlet"/>
+				<xs:element ref="servlet-mapping"/>
+				<xs:element ref="session-config"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="init-param">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="param-name"/>
+				<xs:element ref="param-value"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="param-name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="unvalor"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="filter-name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="log"/>
+				<xs:enumeration value="otrovalor"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="param-value">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="masvalor"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="url-pattern">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="otromas"/>
+				<xs:enumeration value="otroyotro"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="filter-class">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="paquete.FilterServlet"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="servlet-name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="otromas"/>
+				<xs:enumeration value="ymas"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="servlet-class">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="otrocuantos"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="filter-mapping">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="filter-name"/>
+				<xs:element ref="url-pattern"/>
+			</xs:sequence>
+			<xs:attribute name="b" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:byte">
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="session-config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="session-timeout"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="servlet-mapping">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="servlet-name"/>
+				<xs:element ref="url-pattern"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="session-timeout">
+		<xs:simpleType>
+			<xs:restriction base="xs:byte">
+				<xs:enumeration value="30"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

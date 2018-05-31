@@ -1,0 +1,12 @@
+﻿<!DOCTYPE hogar
+[
+<!ELEMENT hogar (familia)>
+<!ELEMENT familia (#PCDATA)>
+<!ATTLIST familia apellido CDATA #REQUIRED>
+]>
+
+<hogar>
+  <familia apellido="Diaz Medina">
+      Una invitacion
+  </familia>
+</hogar>

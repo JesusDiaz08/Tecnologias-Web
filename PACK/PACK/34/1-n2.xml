@@ -1,0 +1,15 @@
+﻿<!DOCTYPE casa
+[
+<!ELEMENT casa (habitacion+,objeto+)>
+<!ELEMENT habitacion (#PCDATA)>
+<!ELEMENT objeto (#PCDATA)> 
+<!ATTLIST objeto nombre CDATA #REQUIRED>
+]>
+
+<casa>
+  <habitacion>COCINA</habitacion>
+  <habitacion>ESTUDIO</habitacion>
+  <habitacion>SALA</habitacion>
+  <habitacion>CUARTO DE HUESPEDES</habitacion>
+  <objeto nombre="ventana"/>
+</casa>

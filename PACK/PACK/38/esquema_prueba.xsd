@@ -1,0 +1,73 @@
+<!---El otro se puede usar en diferentes derivaciones y este está en el elemento raíz-->
+<!--DECLARAMOS EL ELEMENTO Y LUEGO EL COMPLEJO-->
+<!-- <elemento atributo = "10">
+	fkjbrjkfbkerfkjer	
+	<a></a> 
+	mdenmedkwdk
+	<b></b> 
+	<elemento> -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="web-app">
+		<xs:complexType>
+			<xs:sequence>
+			
+				<xs:element name="filter">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="filter-name" type="xs:string" />
+							<xs:element name="filter-class" type="xs:string" />
+							<xs:element name="init-param">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="param-name" type="xs:string" />
+										<xs:element name="param-value" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="a" type="xs:string" use="required" />
+					</xs:complexType>				
+				</xs:element>
+				
+				<xs:element name="filter-mapping">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="filter-name" type="xs:string" />
+							<xs:element name="url-pattern" type="xs:string" />
+						</xs:sequence>
+						<xs:attribute name="b" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="servlet">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="servlet-name" type="xs:string" />
+							<xs:element name="servlet-class" type="xs:string" />
+						</xs:sequence>
+						<xs:attribute name="c" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="servlet-mapping">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="servlet-name" type="xs:string" />
+							<xs:element name="url-pattern" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="session-config">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="session-timeout" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>				
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!-- atributos dentro de la extension -->

@@ -1,0 +1,10 @@
+<!---El otro se puede usar en diferentes derivaciones y este está en el elemento raíz-->
+<!--DECLARAMOS EL ELEMENTO Y LUEGO EL COMPLEJO-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RAIZ">
+		<xs:complexType>
+			<xs:attribute name="atributo" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

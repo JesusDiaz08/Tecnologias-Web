@@ -1,0 +1,21 @@
+<!---El otro se puede usar en diferentes derivaciones y este está en el elemento raíz-->
+<!--DECLARAMOS EL ELEMENTO Y LUEGO EL COMPLEJO-->
+<!-- <elemento atributo = "10">
+	fkjbrjkfbkerfkjer	
+	<a></a> 
+	mdenmedkwdk
+	<b></b> 
+	<elemento> -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RAIZ">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element name="a" type="xs:string"/>
+				<xs:element name="b" type="xs:string"/>
+			</xs:sequence>
+			<xs:attribute name="atributo" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="raiz1" type="xs:string" />
+</xs:schema>
+<!-- atributos dentro de la extension -->

@@ -1,0 +1,8 @@
+<RAIZ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema15.xsd">
+	<c>HOLA</c>	
+	<a></a>
+	<b></b>
+</RAIZ>
+
+
+<!-- con all se puede cambiar el orden de los elementos pero deben estar TODOS-->

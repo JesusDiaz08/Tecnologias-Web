@@ -1,0 +1,31 @@
+﻿<!DOCTYPE casa
+[
+<!ELEMENT casa (familia)>
+<!ELEMENT familia (invitacion,nummesa,bebida)>
+<!ELEMENT invitacion (invitados)>
+<!ELEMENT invitados (#PCDATA)>
+<!ELEMENT nummesa (#PCDATA)>
+<!ELEMENT bebida (#PCDATA)> 
+
+
+<!ATTLIST familia apellido CDATA #REQUIRED>
+<!ATTLIST invitacion enviada (si|no) #REQUIRED>
+<!ATTLIST invitacion numinvitacion ID #REQUIRED>
+<!ATTLIST nummesa idnummesa IDREF #REQUIRED>
+<!ATTLIST invitados autorizados NMTOKENS #REQUIRED>
+
+<!ENTITY ron "RON">
+<!ENTITY cognac "COGNAC">
+]>
+
+<casa>
+  <familia apellido="Diaz Medina">
+    <invitacion enviada="si" numinvitacion="m1371">
+      <invitados autorizados="JESUS.KAIMORTS Dr.StrangeStark">
+      </invitados>
+    </invitacion>
+    <nummesa idnummesa="m1371">
+    </nummesa>
+    <bebida>&ron;&cognac;</bebida>
+  </familia>
+</casa>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Option</title>
+    </head>
+    <body>
+        <form action='Servlet01' method='get'>
+            Nombre: <input type='text' name='clave_name'/>
+            <p>Bebida
+                <select name='clave_drink' required>
+                    <option value=''>Elige bebida</option>
+                    <optgroup label="Con Vodka">
+                        <option>Martini</option>
+                        <option>Cosmopolita</option>
+                        <option>Destornillador</option>
+                    </optgroup>
+                </select>
+            </p>          
+            <p>Vacaciones
+                <select name='clave_holiday' required>
+                    <option value=''>Elige vacacion</option>
+                    <optgroup label="Mexico">
+                        <option>Playa</option>
+                        <option>Bosque</option>
+                        <option>Ciudad</option>
+                    </optgroup>
+                </select>
+            </p>
+            <br/>
+            <input type='submit' value='Enviar'/>
+        </form>
+    </body>
+</html>

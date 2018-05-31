@@ -1,0 +1,13 @@
+﻿<!DOCTYPE casa
+[
+<!ELEMENT casa (habitacion+)>
+<!ELEMENT habitacion (#PCDATA)>
+
+]>
+
+<casa>
+  <habitacion>BANIO</habitacion>
+  <habitacion>OOCINA</habitacion>
+  <habitacion>CUARTO DE JUEGO</habitacion>
+  <habitacion>ESTUDIO</habitacion>
+</casa>

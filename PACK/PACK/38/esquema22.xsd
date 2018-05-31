@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="RAIZ">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="a" type="xs:string" minOccurs="1" maxOccurs="1"/>         <!--CARDINALIDAD DE DEFAULT -->
+				<xs:element name="b" type="xs:string" minOccurs="1" maxOccurs="unbounded"/> <!--CARDINALIDAD DE + -->
+				<xs:element name="c" type="xs:string" minOccurs="1" maxOccurs="unbounded"/> <!--CARDINALIDAD DE * -->
+				<xs:element name="d" type="xs:string" minOccurs="0" maxOccurs="1"/>         <!--CARDINALIDAD DE ? -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>
